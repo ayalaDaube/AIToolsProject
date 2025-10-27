@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Recipe Voice — Settings</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-settings">
+<main class="card center-card">
+<h1>Personal settings</h1>
+<form id="settingsForm" class="form">
+<label>Line delay (milliseconds)
+<input id="settingDelay" type="number" min="0" step="250">
+</label>
+<label>Theme
+<select id="settingTheme">
+<option value="light">Light</option>
+<option value="dark">Dark</option>
+</select>
+</label>
+<label>Voice choice
+<select id="settingVoice"></select>
+</label>
+<label>Speech rate
+<input id="settingRate" type="range" min="0.5" max="2" step="0.1" value="1">
+<span id="rateDisplay">1.0x</span>
+</label>
+<div class="row">
+<button type="submit" class="btn primary">Save & Continue</button>
+</div>
+</form>
+</main>
+<script src="app.js"></script>
+<script>initPage('settings')</script>
+</body>
+</html>

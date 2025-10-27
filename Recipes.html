@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Recipe Voice — Recipes</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-recipes">
+<header class="topbar">
+<h2>My Recipes</h2>
+<div>
+<input id="searchBox" placeholder="Search recipes…">
+<button id="addRecipeBtn" class="btn">Add Recipe</button>
+<button id="logoutBtn" class="btn outline">Logout</button>
+</div>
+</header>
+
+
+<main class="content">
+<section id="listSection" class="card">
+<ul id="recipeList" class="list"></ul>
+</section>
+
+
+<section id="editorSection" class="card hidden">
+<h3>Add / Edit Recipe</h3>
+<form id="recipeForm" class="form">
+<label>Title<input id="recipeTitle" required></label>
+<label>Ingredients (one per line)
+<textarea id="recipeIngredients" rows="6"></textarea>
+</label>
+<label>Directions (one paragraph per line)
+<textarea id="recipeDirections" rows="8"></textarea>
+</label>
+<div class="row">
+<button type="submit" class="btn primary">Save Recipe</button>
+<button id="cancelEdit" type="button" class="btn outline">Cancel</button>
+</div>
+</form>
+</section>
+</main>
+<script src="app.js"></script>
+<script>initPage('recipes')</script>
+</body>
+</html>

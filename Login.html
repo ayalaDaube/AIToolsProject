@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Recipe Voice — Login</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-login">
+<main class="card center-card">
+<h1>Welcome back 👩‍🍳</h1>
+<form id="loginForm" class="form">
+<label>Username<input id="loginUser" required></label>
+<label>Password<input id="loginPass" type="password" required></label>
+<div class="row">
+<button type="submit" class="btn primary">Login</button>
+<button id="toSign" type="button" class="btn outline">Sign Up</button>
+</div>
+</form>
+<p class="muted">Test accounts are preloaded: <code>alice / pass123</code>, <code>bob / pass456</code></p>
+</main>
+<script src="app.js"></script>
+<script>initPage('login')</script>
+</body>
+</html>

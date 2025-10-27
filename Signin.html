@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Recipe Voice — Sign Up</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-signin">
+<main class="card center-card">
+<h1>Create account</h1>
+<form id="signForm" class="form">
+<label>Username<input id="signUser" required></label>
+<label>Password<input id="signPass" type="password" required></label>
+<label>Phone<input id="signPhone" inputmode="tel"></label>
+<label>Email<input id="signEmail" type="email"></label>
+<div class="row">
+<button type="submit" class="btn primary">Sign Up</button>
+<button id="toLogin" type="button" class="btn outline">Back to Login</button>
+</div>
+</form>
+</main>
+<script src="app.js"></script>
+<script>initPage('signin')</script>
+</body>
+</html>

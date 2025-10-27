@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Recipe Voice — View</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body class="page-recipe">
+<header class="topbar">
+<button id="backBtn" class="btn outline">← Back</button>
+<h2 id="viewTitle">Recipe</h2>
+<div></div>
+</header>
+
+
+<main class="card content">
+<section>
+<h3>Ingredients</h3>
+<ul id="viewIngredients"></ul>
+</section>
+<section>
+<h3>Directions</h3>
+<div id="viewDirections"></div>
+</section>
+
+
+<div class="controls">
+<button id="playBtn" class="btn primary">Play</button>
+<button id="pauseBtn" class="btn">Pause</button>
+<button id="stopBtn" class="btn outline">Stop</button>
+</div>
+</main>
+<script src="app.js"></script>
+<script>initPage('recipe')</script>
+</body>
+</html>
+
